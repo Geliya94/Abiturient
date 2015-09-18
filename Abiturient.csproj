@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C551302C-B10E-469C-A6A9-DC650CDE30C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Abiturient</RootNamespace>
+    <AssemblyName>Abiturient</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abiturient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abiturient.Designer.cs">
+      <DependentUpon>Abiturient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassReader\AbiturientReadClass.cs" />
+    <Compile Include="ClassObject\AbiturientClass.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generation_Class.cs" />
+    <Compile Include="List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassObject\ListAbiturienClass.cs" />
+    <Compile Include="ClassObject\ListSpecClass.cs" />
+    <Compile Include="Method.cs" />
+    <Compile Include="Priority.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Priority.Designer.cs">
+      <DependentUpon>Priority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadTableListClass.cs" />
+    <Compile Include="Specialty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specialty.Designer.cs">
+      <DependentUpon>Specialty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassObject\SpecialtyClass.cs" />
+    <Compile Include="ClassReader\SpecialtyReadClass.cs" />
+    <Compile Include="Spec_Subj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spec_Subj.Designer.cs">
+      <DependentUpon>Spec_Subj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stud_Subj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stud_Subj.Designer.cs">
+      <DependentUpon>Stud_Subj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject.Designer.cs">
+      <DependentUpon>Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassObject\SubjectClass.cs" />
+    <Compile Include="ClassReader\SubjectReadClass.cs" />
+    <Compile Include="Svyaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Svyaz.Designer.cs">
+      <DependentUpon>Svyaz.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Abiturient.resx">
+      <DependentUpon>Abiturient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Priority.resx">
+      <DependentUpon>Priority.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Specialty.resx">
+      <DependentUpon>Specialty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spec_Subj.resx">
+      <DependentUpon>Spec_Subj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stud_Subj.resx">
+      <DependentUpon>Stud_Subj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject.resx">
+      <DependentUpon>Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Svyaz.resx">
+      <DependentUpon>Svyaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
